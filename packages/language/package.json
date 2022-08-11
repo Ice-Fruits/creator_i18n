@@ -1,0 +1,21 @@
+{
+	"name": "language",
+	"version": "0.0.1",
+	"description": "null的i18n扩展包",
+	"author": "null",
+	"main": "main.js",
+	"scene-script": "scene-script.js",
+	"main-menu": {
+		"Packages/language": {
+			"message": "language:openPanel"
+		}
+	},
+	
+	"panel": {
+		"main": "panel/index.js",
+		"type": "dockable",
+		"title": "i18n 控制台",
+		"width": 400,
+		"height": 300
+	}
+}
