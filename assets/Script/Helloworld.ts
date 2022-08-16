@@ -26,7 +26,6 @@ export class Helloworld extends cc.Component {
     }
 
     start() {
-        // this.node.getChildByName("label2").getComponent(i18nLabel).init("love_msg", ["a1", "b2"]);
         i18nMgr.addComponent("Canvas/New Label","no need");
     }
 

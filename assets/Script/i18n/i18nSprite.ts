@@ -26,8 +26,10 @@ export class i18nSprite extends cc.Component {
 
         let sprite = this.getComponent(cc.Sprite);
         if (cc.isValid(sprite)) {
+            this.node.active = false;
             i18nMgr._getSprite(value, (spriteFrame) => {
                 if (cc.isValid(sprite)) {
+                    this.node.active = true;
                     sprite.spriteFrame = spriteFrame;
                 }
             });

@@ -26,8 +26,10 @@ export class i18nSpine extends cc.Component {
 
         let spine = this.getComponent(sp.Skeleton);
         if (cc.isValid(spine)) {
+            this.node.active = false;
             i18nMgr._getSpine(value, (skeletonData) => {
                 if (cc.isValid(spine)) {
+                    this.node.active = true;
                     spine.skeletonData = skeletonData;
                 }
             });
